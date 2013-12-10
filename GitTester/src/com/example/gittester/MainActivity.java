@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity implements OnTouchListener {
 	
-	Button btn1;
+	Button btn1, btn2;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,8 @@ public class MainActivity extends Activity implements OnTouchListener {
 		
 		btn1 = (Button)findViewById(R.id.button1);
 		btn1.setOnTouchListener(this);
+		btn2 = (Button)findViewById(R.id.button2);
+		btn2.setOnTouchListener(this);
 	}
 
 	@Override
@@ -38,6 +40,9 @@ public class MainActivity extends Activity implements OnTouchListener {
 			switch (v.getId()) {
 			case R.id.button1:
 				Toast.makeText(this, "ç°Ç≈ÇµÇÂÅI", Toast.LENGTH_SHORT).show();
+				break;
+			case R.id.button2:
+				Toast.makeText(this, "âΩÇ»Ç¡ÇµÇ°Å`ÅH", Toast.LENGTH_SHORT).show();
 				break;
 			}
 			return true;
